@@ -10,7 +10,7 @@ object AuthorService {
         transaction {
             val entity = AuthorEntity.new {
                 this.fio = body.fio
-                this.createTime = DateTime.now().toDateTime()
+                this.createTime = DateTime.now()
             }
             return@transaction entity.toResponse()
         }

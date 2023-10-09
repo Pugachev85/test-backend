@@ -1,1 +1,3 @@
-update budget set type = 'Расход' where type = 'Комиссия'
+update budget
+set type = 'Расход'
+where type = 'Комиссия'
